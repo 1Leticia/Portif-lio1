@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Site do Trabalho</title>
+    <link rel="stylesheet" href="css/tema.css">
+</head>
+
+<body>
+    <div class="cabecalho">
+        <span>PHPShop</span>
+        <input type="text" class="palavra">
+        <button class="pesquisa">Pesquisar</button>
+        <div class="conectar">
+            <img src="css/lock.png" alt="" onclick="EntrarAbrir()" />
+            <span onclick="EntrarAbrir()">Conectar</span>
+        </div>
+		<div class="carrinho">
+		<img src="css/carrinho.jpg"/>
+		<span>Compras</span>
+		</div>
+    </div>
+	  
+    <div class="menu">
+        <span><a href="#" onclick="MostraInformatica()">Informática</a></span>
+        <span><a href="#" onclick="MostraAutomotivo()">Automotivo</a></span>
+        <span><a href="#" onclick="MostraBelezaSaude()">Cine e Foto</a></span>
+    </div>
+
+    <div class="conteudo">
+        <div class="menuLateral">
+
+            <ul>
+                <span onclick="MostraInformatica()">Informática</span>
+                <li onclick="MostraInformatica()">ULTRABOOK</li>
+                <li onclick="MostraInformatica()">NOTEBOOK</li>
+                <li onclick="MostraInformatica()">NETBOOK</li>
+                <li onclick="MostraInformatica()">DESKTOP</li>
+                <li onclick="MostraInformatica()">ALL IN ONE</li>
+                <li onclick="MostraInformatica()">MONITORES</li>
+                <li onclick="MostraInformatica()">+ Informática</li>
+            </ul>
+            <ul>
+                <span onclick="MostraAutomotivo()">Automotivo</span>
+                <li onclick="MostraAutomotivo()">PNEUS E RODAS</li>
+                <li onclick="MostraAutomotivo()">OLEOS E FLUIDOS</li>
+                <li onclick="MostraAutomotivo()">LIMPEZA AUTOMÓVEIS</li>
+                <li onclick="MostraAutomotivo()">+ Automotivo</li>
+            </ul>
+            <ul>
+                <span onclick="MostraBelezaSaude()">Cine & Foto</span>
+                <li onclick="MostraBelezaSaude()">CEMRAS DIGITAIS</li>
+                <li onclick="MostraBelezaSaude()">FILMADORAS</li>
+                <li onclick="MostraBelezaSaude()">ACESSÓRIOS</li>
+                <li onclick="MostraBelezaSaude()">+ Cine & Foto</li>
+            </ul>
+        </div>
+        <div id="tabela" class="tabela">
+
+            <table>
+                <caption>Lista de Preços:</caption>
+                <thead>
+                    <tr>
+                        <th>Produtos</th>
+                        <th>Preços</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td>Notebook Acer</td>
+                        <td>R$ 1290,00</td>
+                        <td>500HD Intel Core i7</td>
+                    </tr>
+                    <td>Ipad Apple</td>
+                    <td>R$ 999,00</td>
+                    <td>16 Gb iOS 8</td>
+                    </tr>
+                    <td>Impressora HP</td>
+                    <td>R$ 299,00</td>
+                    <td>Wi-Fi Scaner</td>
+                    </tr>
+                    <td>Mouse</td>
+                    <td>R$ 30,00</td>
+                    <td>Sem Fio</td>
+                    </tr>
+                    <td>Monitor</td>
+                    <td>R$ 320,00</td>
+                    <td>4k 3000</td>
+                    </tr>
+                    <td>HD Sansung</td>
+                    <td>R$ 500,00</td>
+                    <td>500HD</td>
+                    </tr>
+            </table>
+
+        </div>
+    </div>
+    <div class="rodape">
+        <span>Programação para Web - Prof° Alexandre L Rangel - Centro Universitário Claretiano</span>
+    </div>
+
+    <div class="fundo" id="telaEntrar">
+        <div class="enter">
+            <form action="#">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for="usuario">Usuário</label>
+                            </td>
+                            <td>
+                                <input type="text" id="usuario">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="senha">Senha</label>
+                            </td>
+                            <td>
+                                <input type="password" id="senha">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="btnEntrar">
+                                <button id="Entrar" onclick="EntrarOK()">Entrar</button>
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+     <script src="js/tabela.js">
+	</script>
+</body>
+
+</html>
